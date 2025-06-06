@@ -1,7 +1,5 @@
-"use client"
-
 import BookingPage from "../booking-page"
 
-export default function Page() {
+export default function BookPage() {
   return <BookingPage />
 }
