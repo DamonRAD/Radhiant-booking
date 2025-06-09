@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,10 +7,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: [],
     unoptimized: true,
   },
-  output: "standalone",
 }
 
-module.exports = nextConfig
+export default nextConfig

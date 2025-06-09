@@ -53,18 +53,16 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom Radiant Diagnostics colors
-        radiant: {
-          navy: "#1e293b",
-          "navy-light": "#334155",
-          "navy-dark": "#0f172a",
-          pink: "#ec4899",
-          "pink-light": "#f472b6",
-          "pink-dark": "#be185d",
-          emerald: "#10b981",
-          "emerald-light": "#34d399",
-          "emerald-dark": "#047857",
+        // Radhiant Colors
+        radhiant: {
+          blue: "#2A3A5A", // Dark Blue/Indigo from logo
+          green: "#3E8B5A", // Green from logo
+          lightBlue: "#E0E7FF", // A lighter shade for backgrounds/accents
+          lightGreen: "#D1FAE5", // A lighter shade for backgrounds/accents
         },
+      },
+      backgroundImage: {
+        "radhiant-emoticon": "url('/radhiant-emoticon-bg.webp')",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,20 +78,10 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-20px)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "spin-slow": "spin 8s linear infinite",
-        "bounce-slow": "bounce 3s infinite",
-        float: "float 6s ease-in-out infinite",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
